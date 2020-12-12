@@ -175,12 +175,12 @@ function getIdGeneratorFunction(/* startFrom */) {
 
 
 module.exports = {
-  getComposition,
-  getPowerFunction,
-  getPolynom,
-  memoize,
-  retry,
-  logger,
-  partialUsingArguments,
-  getIdGeneratorFunction,
+  // getComposition,
+  // getPowerFunction,
+  // getPolynom,
+  // memoize,
+  // retry,
+  // logger,
+  // partialUsingArguments,
+  // getIdGeneratorFunction,
 };
