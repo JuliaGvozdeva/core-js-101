@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* ************************************************************************************************
  *                                                                                                *
  * Plese read the following tutorial before implementing tasks:                                   *
@@ -141,9 +142,9 @@ const cssSelectorBuilder = {
 };
 
 
-// module.exports = {
-//   Rectangle,
-//   getJSON,
-//   fromJSON,
-//   cssSelectorBuilder,
+module.exports = {
+  Rectangle,
+  getJSON,
+  fromJSON,
+  cssSelectorBuilder,
 };

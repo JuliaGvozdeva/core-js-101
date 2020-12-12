@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* *********************************************************************************************
  *                                                                                             *
  * Plese read the following tutorial before implementing tasks:                                *
@@ -175,12 +176,12 @@ function getIdGeneratorFunction(/* startFrom */) {
 
 
 module.exports = {
-  // getComposition,
-  // getPowerFunction,
-  // getPolynom,
-  // memoize,
-  // retry,
-  // logger,
-  // partialUsingArguments,
-  // getIdGeneratorFunction,
+  getComposition,
+  getPowerFunction,
+  getPolynom,
+  memoize,
+  retry,
+  logger,
+  partialUsingArguments,
+  getIdGeneratorFunction,
 };

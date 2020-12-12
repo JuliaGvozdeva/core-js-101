@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* *************************************************************************************************
  *                                                                                                *
  * Plese read the following tutorial before implementing tasks:                                   *
@@ -400,21 +401,21 @@ function evaluateTicTacToePosition(/* position */) {
 
 
 module.exports = {
-  // getFizzBuzz,
-  // getFactorial,
-  // getSumBetweenNumbers,
-  // isTriangle,
-  // doRectanglesOverlap,
-  // isInsideCircle,
-  // findFirstSingleChar,
-  // getIntervalString,
-  // reverseString,
-  // reverseInteger,
-  // isCreditCardNumber,
-  // getDigitalRoot,
-  // isBracketsBalanced,
-  // toNaryString,
-  // getCommonDirectoryPath,
-  // getMatrixProduct,
-  // evaluateTicTacToePosition,
+  getFizzBuzz,
+  getFactorial,
+  getSumBetweenNumbers,
+  isTriangle,
+  doRectanglesOverlap,
+  isInsideCircle,
+  findFirstSingleChar,
+  getIntervalString,
+  reverseString,
+  reverseInteger,
+  isCreditCardNumber,
+  getDigitalRoot,
+  isBracketsBalanced,
+  toNaryString,
+  getCommonDirectoryPath,
+  getMatrixProduct,
+  evaluateTicTacToePosition,
 };

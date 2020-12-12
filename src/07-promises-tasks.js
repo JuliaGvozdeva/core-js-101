@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* ************************************************************************************************
  *                                                                                                *
  * Plese read the following tutorial before implementing tasks:                                   *
@@ -96,9 +97,9 @@ function chainPromises(/* array, action */) {
   throw new Error('Not implemented');
 }
 
-// module.exports = {
-//   willYouMarryMe,
-//   processAllPromises,
-//   getFastestPromise,
-//   chainPromises,
+module.exports = {
+  willYouMarryMe,
+  processAllPromises,
+  getFastestPromise,
+  chainPromises,
 };
