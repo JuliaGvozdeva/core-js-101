@@ -200,7 +200,7 @@ function getHead(arr, n) {
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'b', 'c', 'd' ]
  */
 function getTail(arr, n) {
-  return arr.slice(n, arr.length);
+  return arr.slice(-n);
 }
 
 
@@ -225,15 +225,7 @@ function getTail(arr, n) {
  *    +'30,31,32,33,34'
  */
 function toCsvText(arr) {
-  let str = '';
-  for (let i = 0; i < arr.length; i++) {
-    if (i === arr.length - 1) {
-      str += `'${arr[i].toString()}'`;
-    } else {
-      str += `'${arr[i].toString()}/n'+`;
-    }
-  }
-  return str;
+  return arr.map((x) => x.join(',')).join('\n');
 }
 
 /**
@@ -386,8 +378,7 @@ function sortDigitNamesByNumericOrder(arr) {
  *   [ 1, 10, 100, 1000 ]  => 1111
  */
 function getItemsSum(arr) {
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
-  return arr.reduce(reducer);
+  return arr.reduce((sum, x) => sum + x, 0);
 }
 
 /**

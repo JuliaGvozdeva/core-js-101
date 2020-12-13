@@ -1,6 +1,14 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-cond-assign */
+/* eslint-disable space-in-parens */
+/* eslint-disable prefer-arrow-callback */
+/* eslint-disable no-return-assign */
+/* eslint-disable quotes */
+/* eslint-disable no-param-reassign */
+/* eslint-disable func-names */
+/* eslint-disable space-before-function-paren */
 /* eslint-disable no-useless-concat */
 /* eslint-disable no-plusplus */
-/* eslint-disable linebreak-style */
 /* *******************************************************************************************
  *                                                                                           *
  * Plese read the following tutorial before implementing tasks:                              *
@@ -232,12 +240,12 @@ function getRectangleString(width, height) {
  *
  */
 function encodeToRot13(str) {
-  let newStr = '';
-  const alph = 'abcdefghijklmnopqrstuvwxyz';
-  for (let i = 0; i < str.length; i++) {
-    newStr += alph[(alph.indexOf(str[i]) + 13) % alph.length];
-  }
-  return newStr;
+  const charCount = 26;
+  const lower = 'z'.charCodeAt(0);
+  const upper = 'Z'.charCodeAt(0);
+  return str.replace(/[a-zA-Z]/g, function(c) {
+    return String.fromCharCode(( c <= "Z" ? upper : lower) >= (c = c.charCodeAt(0) + 13) ? c : c - charCount);
+  });
 }
 
 /**
@@ -254,7 +262,7 @@ function encodeToRot13(str) {
  *   isString(new String('test')) => true
  */
 function isString(value) {
-  return typeof value === 'string';
+  return typeof value === 'string' || value instanceof String;
 }
 
 

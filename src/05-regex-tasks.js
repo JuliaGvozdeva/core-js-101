@@ -33,7 +33,7 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  return /{[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}}/;
+  return /{[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}}/;
 }
 
 
